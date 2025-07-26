@@ -76,7 +76,7 @@ view original@Model{..} =
     where
         prevPath = Pictures (map (circleAt 0.001) path)
         aktObject = circleAt 0.003 (position object)
-        aktVel = Color red $ drawVectorFrom (position object) (velocity object)
+        aktVel = Color blue $ drawVectorFrom (position object) (velocity object)
         aktForce = Color green $ drawVectorFrom (position object) force
         force = lorentzForce (field original) object
         
